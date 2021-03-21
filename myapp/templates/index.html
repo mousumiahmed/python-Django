@@ -1,0 +1,27 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Index</title> 
+    {% load static %} 
+{% comment %} </head>   {% endcomment %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<script src="{% static '/js/script.js' %}" type="text/javascript"></script>
+
+<body>  
+<h2>Welcome to Django!!! hey i am hereeee........{{name}}</h2>
+<img src="{% static '/red-pen-with-spiral-notepads-laptop-cactus-plant-pot-white-background_23-2148042101.jpg' %}" alt="My image" height="300px" width="700px"/>  
+
+<body>  
+   
+
+        <form method="POST" class="post-form" enctype="multipart/form-data">  
+        {% csrf_token %}  
+        
+        {{ form.as_p }}  
+        <button type="submit" class="save btn btn-default">Save</button>
+        {{ form1.as_p }}  
+        <button type="submit" class="save btn btn-default">Save</button>  
+</form> 
+</body>  
+</html> 

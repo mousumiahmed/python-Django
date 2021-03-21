@@ -21,4 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/',views.hello),
     path('date/',views.index),
+    path('template/', views.templ),
+    path('form/', views.form),
+    path('fileupload/',views.fileupload)
 ]
